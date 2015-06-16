@@ -1,0 +1,17 @@
+echo 'Installing aliases'
+source ~/.configs/aliases
+
+echo 'Setting up colours'
+source ~/.configs/colours
+
+echo 'Setting up git'
+source ~/.configs/git
+
+echo 'Settung up virtualenv'
+source ~/.configs/virtualenv.ubuntu
+
+cd ~
+echo "${green}"`lsb_release -rd`
+echo -ne "${red}Today is:\t\t${cyan}" `date`; echo ""
+echo -e "${red}Kernel Information: \t${cyan}" `uname -smr`
+echo
