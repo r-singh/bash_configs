@@ -1,2 +1,4 @@
+echo "Setting up virtualenv and virtualenv wrapper"
 export WORKON_HOME="$HOME/.virtualenvs"
 source /usr/bin/virtualenvwrapper.sh
+echo "Python virtualenvs: $WORKON_HOME"

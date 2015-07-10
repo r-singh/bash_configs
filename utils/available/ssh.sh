@@ -1,3 +1,5 @@
+echo "Configuring SSH agent"
+
 SSH_ENV=$HOME/.ssh/environment
 
 # start the ssh-agent
