@@ -1,6 +1,4 @@
-cite 'about-alias'
-about-alias 'vim abbreviations'
-
+echo "Setting up VIM aliases"
 VIM=$(command -v vim)
 GVIM=$(command -v gvim)
 MVIM=$(command -v mvim)

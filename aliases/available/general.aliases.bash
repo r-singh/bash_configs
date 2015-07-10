@@ -1,6 +1,4 @@
-cite about-alias
-about-alias 'general aliases'
-
+echo "Setting up general aliases"
 # List directory contents
 alias sl=ls
 alias ls='ls -G'        # Compact view, show colors

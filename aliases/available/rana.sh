@@ -1,3 +1,4 @@
+echo "Setting up rana's normal aliases"
 ## My normal aliases
 alias c='clear'
 alias more=less

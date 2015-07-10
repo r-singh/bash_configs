@@ -1,6 +1,4 @@
-cite 'about-alias'
-about-alias 'vagrant aliases'
-
+echo "Setting up vagrant aliases"
 # Aliases
 alias vup="vagrant up"
 alias vh="vagrant halt"

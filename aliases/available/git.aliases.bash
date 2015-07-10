@@ -1,6 +1,4 @@
-cite 'about-alias'
-about-alias 'common git abbreviations'
-
+echo "Setting up (bashit) git aliases"
 # Aliases
 alias gcl='git clone'
 alias ga='git add'
