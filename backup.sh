@@ -8,7 +8,7 @@ function backup {
 }
 
 tmpdate=$(date +%s)
-backup_folder=~/.shell_configs.backups/$tmpdate
+backup_folder=~/.bash_configs.backups/$tmpdate
 mkdir -p $backup_folder
 cd $backup_folder
 
