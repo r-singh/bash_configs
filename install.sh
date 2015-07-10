@@ -1,7 +1,7 @@
 BASH_CFG_DIR=".bash_configs"
 
 echo "Backing up existing config files"
-source ~/$BASH_CFG_DIR/backup.sh
+source ~/$BASH_CFG_DIR/backup_configs.sh
 
 function relink {
    cd ~
@@ -9,6 +9,7 @@ function relink {
    ln -s ~/$BASH_CFG_DIR/$1 .$1
 }
 
+echo "Installing custom configuration files"
 relink vimrc
 relink viminfo
 relink bash_profile
@@ -17,4 +18,5 @@ relink bash_logout
 relink tmux
 relink inputrc
 
-echo done
+echo "All done, ready to rumble"
+echo
