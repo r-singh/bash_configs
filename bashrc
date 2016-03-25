@@ -1,4 +1,4 @@
-#  don't need to check for mail
+# don't need to check for mail
 unset MAILCHECK
 
 
