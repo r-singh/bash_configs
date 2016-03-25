@@ -1,6 +1,12 @@
 #  don't need to check for mail
 unset MAILCHECK
-export COSMOS_CERT=~/.ssh/rana-bbc.pem
+
+
+# For cosmos-cli
+export COSMOS_CERT=/home/rana/.ssh/bbc/bbc.pem.crt
+export COSMOS_CERT_KEY=/home/rana/.ssh/bbc/bbc.pem.key
+# eval "$(cosmos completion)"
+
 BASH_CFG_DIR="$HOME/.bash_configs"
 
 function source_all {
@@ -11,15 +17,8 @@ function source_all {
     done
 }
 
-
-
-# BBC STUFF
-export COSMOS_CERT=/home/rana/.ssh/bbc.crt.pem
-export COSMOS_CERT_KEY=/home/rana/.ssh/bbc.key.pem
-
-
-export PATH=~/.npm_global/bin:$PATH
+GTM_API_HOST=127.0.0.1
+GTM_API_PORT=5000
 source_all $BASH_CFG_DIR/aliases/enabled/*
 source_all $BASH_CFG_DIR/utils/enabled/*
-source $BASH_CFG_DIR/misc/appearance.sh
-echo
+#source $BASH_CFG_DIR/misc/appearance.sh

@@ -8,8 +8,15 @@ alias vimrc='vi ~/.vimrc'
 
 # BBC aliases
 alias workspace='cd ~/workspace/ ; pwd'
-alias edge='cd ~/workspace/gtm-edge-node/ ; pwd'
-alias api='cd ~/workspace/gtm-origin-api/ ; pwd'
+alias edge='cd ~/workspace/gtm-edge-node/ ; git status; pwd'
+alias api='cd ~/workspace/gtm-api/ ; git status ;  pwd'
+alias gtm-common='cd  ~/workspace/gtm-common;'
+alias runserver='workon gtm-api; cd /home/rana/workspace/gtm-api/scripts; ./runserver.sh'
+alias runservice='workon gtm-api; cd /home/rana/workspace/gtm-api/scripts; ./runservice.sh'
+alias rebuild_db='workon gtm-api; cd /home/rana/workspace/gtm-api/scripts; ./rebuild_db.sh'
+alias pycharm='~/Software/pycharm.sh &'
+alias sandbox="ssh developer@192.168.193.22"
+
 
 
 # enable color support of ls and also add handy aliases
@@ -26,5 +33,4 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias dirsize='du -ch -d 1'
-alias pycharm='/home/rana/Software/pycharm-community-4.5.2/bin/pycharm.sh'
 
